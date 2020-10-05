@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { LitElement, html, css } from 'lit-element';
 import { nothing } from 'lit-html';
-import { getDate, formatDate, minMaxDate } from '../utils/functions';
+import { getDate, formatDate, minMaxDate } from '../../../utils/functions';
 
 class VacationForm extends LitElement {
   static get styles() {
@@ -115,7 +115,6 @@ class VacationForm extends LitElement {
           };
 
           this.arrVacation.push(this.vacation);
-          this.sendData();
           this.id++;
 
           // Visualizar los datos
@@ -243,15 +242,6 @@ class VacationForm extends LitElement {
     for (let i = 0; i < 3; i++) {
       this.arrTableView[i] = this.arrVacation[(this.pointer * 3) + i];
     }
-  }
-
-  sendData() {
-    const event = new CustomEvent('add-new', {
-      detail: {
-        apply: this.vacation
-      }
-    });
-    this.dispatchEvent(event);
   }
 
   render() {

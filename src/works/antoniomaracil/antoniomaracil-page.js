@@ -3,8 +3,7 @@ import { LitElement, html } from 'lit-element';
 import { commonStyles } from '../../utils/custom-styles';
 import '../../components/common-header';
 import '../../components/work-header';
-import './components/vacation-form';
-import './components/admin-vacation-form';
+import './components/vacation-form/components/vacation-form';
 
 class AntoniomaracilPage extends LitElement {
   static get styles() {
@@ -35,10 +34,7 @@ class AntoniomaracilPage extends LitElement {
         <work-header>antoniomaracil</work-header>
         <h2 style="text-align:center;">Vacation Form</h2>
         <hr>
-        <vacation-form @add-new="${this.addVacation}"></vacation-form>
-        <h2 style="text-align:center;">Admin vacation Form</h2>
-        <hr>
-        <admin-vacation-form .arrVacation="${this.arrVacation}"></admin-vacation-form>
+        <vacation-form></vacation-form>
       </section>
     `;
   }
