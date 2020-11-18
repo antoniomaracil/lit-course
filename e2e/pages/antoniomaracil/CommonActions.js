@@ -1,5 +1,5 @@
 const { By } = require('selenium-webdriver');
-const { findElement } = require('../utils/shadow-dom.js');
+const { findElement } = require('../../../../../e2e/utils/hadow-dom.js');
 const assert = require('assert');
 
 class CommonActions {
