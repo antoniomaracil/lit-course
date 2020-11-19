@@ -1,7 +1,7 @@
 import { expect, fixture, html } from '@open-wc/testing';
-import sinon from 'sinon/pkg/sinon-esm.js';
+// import sinon from 'sinon/pkg/sinon-esm.js';
 import '../components/document-list/components/document-list';
-import { empDocument } from '../utils/constants';
+// import { empDocument } from '../utils/constants';
 
 describe('Document list tests:', () => {
   describe('Empty document list', () => {
@@ -21,7 +21,7 @@ describe('Document list tests:', () => {
       expect(cells.length).equal(0);
     });
   });
-  describe('Document list with data', () => {
+  /* describe('Document list with data', () => {
     let el;
 
     before(async () => {
@@ -55,5 +55,5 @@ describe('Document list tests:', () => {
       const pathInProp = el.list[0].path;
       expect(pathInRow).to.contain(pathInProp);
     });
-  });
+  }); */
 });

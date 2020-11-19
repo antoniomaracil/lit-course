@@ -21,7 +21,7 @@ describe('Admin vacation form select', function () {
   it('Page title is correct', async () => common.checkPageTitle());
   it('Go to works view', async () => common.selectListElement('Works'));
   it('Go to user works folder', async () => aCommon.selectUserFolder('antoniomaracil'));
-  it('Go to AdminVacationForm view', async () => aCommon.selectAdminComponent('adminVacationForm'));
+  it('Go to AdminVacationForm view', async () => aCommon.selectAdminComponent('common-btn'));
   it('Change select from the first row', async () => adminVacationForm.checkChangedSelect());
 
   after(() => driver && driver.quit());

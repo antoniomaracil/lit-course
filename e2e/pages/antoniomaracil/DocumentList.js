@@ -7,12 +7,14 @@ class DocumentListPage {
     this.wc = 'document-list';
   }
 
-  async checkChangedSelect() {
-    const select = await findElement(this.wc, By.className('selectOptions'));
-    await select.click();
-    const optionNumer = Math.floor(Math.random() * 2 + 1);
-    const option = await findElement(this.wc, By.css('option[value="' + optionNumer + '"]'));
-    await option.click();
+  async checkDownloadLink() {
+    const link = await findElement(this.wc, By.linkText('Antonio_Martin_CV'));
+    link.click();
+  }
+
+  async checkRemoveLink() {
+    const link = await findElement(this.wc, By.css('.rm-btn'));
+    link.click();
   }
 }
 

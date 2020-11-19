@@ -52,7 +52,7 @@ export class DocumentList extends LitElement {
                   <div class="date light-grey">${dateFormatter(item.uploadDate).default}</div>
                   <div class="info">
                     <button @click="${() => this.deleteItem(item._id)}">
-                      <img src="assets/antoniomaracil/remove.png" alt="remove" />
+                      <img class="rm-btn" src="assets/antoniomaracil/remove.png" alt="remove" />
                     </button>
                   </div>
                 </div>
