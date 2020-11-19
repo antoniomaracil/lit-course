@@ -1,10 +1,10 @@
 const { By } = require('selenium-webdriver');
 const { findElement } = require('../../utils/shadow-dom.js');
 
-class AdminVacationFormPage {
+class DocumentListPage {
   constructor(driver) {
     this.driver = driver;
-    this.wc = 'admin-vacation-form';
+    this.wc = 'document-list';
   }
 
   async checkChangedSelect() {
@@ -16,4 +16,4 @@ class AdminVacationFormPage {
   }
 }
 
-module.exports = AdminVacationFormPage;
+module.exports = DocumentListPage;
