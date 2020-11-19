@@ -1,7 +1,7 @@
 import { expect, fixture, html } from '@open-wc/testing';
-import sinon from 'sinon/pkg/sinon-esm.js';
+// import sinon from 'sinon/pkg/sinon-esm.js';
 import '../components/document-list/components/document-list';
-import { empDocument } from '../utils/constants';
+// import { empDocument } from '../utils/constants';
 
 describe('Document list tests:', () => {
   describe('Empty document list', () => {
