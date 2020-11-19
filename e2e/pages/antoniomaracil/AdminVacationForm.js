@@ -1,7 +1,7 @@
 const { By } = require('selenium-webdriver');
 const { findElement } = require('../../utils/shadow-dom.js');
 
-class FormExamplePage {
+class AdminVacationFormPage {
   constructor(driver) {
     this.driver = driver;
     this.wc = 'admin-vacation-form';
@@ -16,4 +16,4 @@ class FormExamplePage {
   }
 }
 
-module.exports = FormExamplePage;
+module.exports = AdminVacationFormPage;

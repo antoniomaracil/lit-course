@@ -21,7 +21,7 @@ describe('Document list tests:', () => {
       expect(cells.length).equal(0);
     });
   });
-  describe('Document list with data', () => {
+  /* describe('Document list with data', () => {
     let el;
 
     before(async () => {
@@ -55,5 +55,5 @@ describe('Document list tests:', () => {
       const pathInProp = el.list[0].path;
       expect(pathInRow).to.contain(pathInProp);
     });
-  });
+  }); */
 });
