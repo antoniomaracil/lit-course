@@ -1,18 +1,18 @@
 const { By } = require('selenium-webdriver');
 const { findElement } = require('../../utils/shadow-dom.js');
-const assert = require('assert');
 
 class FormExamplePage {
   constructor(driver) {
     this.driver = driver;
-    this.wc = 'form-example';
+    this.wc = 'admin-vacation-form';
   }
 
   async checkChangedSelect() {
-    const select = await findElement(this.wc, By.css('.'));
-    const textSelect = await select.getText();
-
-    assert.strictEqual(textSelect);
+    const select = await findElement(this.wc, By.className('selectOptions'));
+    await select.click();
+    const optionNumer = Math.floor(Math.random() * 2 + 1);
+    const option = await findElement(this.wc, By.css('option[value="' + optionNumer + '"]'));
+    await option.click();
   }
 }
 
